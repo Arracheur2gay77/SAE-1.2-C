@@ -56,9 +56,9 @@ int main(){
             i++;
         } while (i<5);
 
-        printf("=============");
-        printf("Essai n°%d",e);
-        printf("Joueur 1 :");        
+        printf("=============\n");
+        printf("Essai n°%d\n",e);
+        printf("Joueur 1 :\n");        
 
         printf("\n\n");
 
