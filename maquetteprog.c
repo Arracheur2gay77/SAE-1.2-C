@@ -4,7 +4,7 @@
 
 int main(){
     srand((unsigned int)time(NULL));
-    int tab1[20],tab2[20],tab3[20],i=0,j,n,exist;
+    int tab1[20],tab2[20],tab3[20],i=0,j,n,exist,e=0;
 
     while(1){
         tab1[i]=i;
@@ -49,6 +49,12 @@ int main(){
     }
     printf("\n");
     while(1){
+        e++;
+        printf("=============");
+        printf("Essai n°%d",e);
+        printf("Joueur 1 :")
+
+
         while(1){
             printf("Veuillez entrer un chiffre de la première table :");
             scanf("%d",&n);
