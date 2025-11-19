@@ -64,8 +64,18 @@ int main(){
     while(1){
         e++;
         printf("==========");
-        printf("Essai n°%d",e);
-        printf("Joueur n°%d",(joueur%2+1));
+        printf("Essai n°%d\n",e);
+        printf("Joueur n°%d\n\n\n",(joueur%2+1));
+
+        printf("Première table :\n");
+        printf("   1  2  3  4  5  6  7");
+        for(i=0,c=8;i<=20;i++,c++){
+            printf("%c ",tab4[i]);
+            if(c>7){
+            printf("\n   ");
+            c=1;
+        }
+        }
         break;
     }
 
