@@ -58,7 +58,7 @@ int main(){
 
         printf("=============\n");
         printf("Essai n°%d\n",e);
-        printf("Joueur %d :\n",(joueur%2));        
+        printf("Joueur %d :\n",(joueur%2+1));        
 
         printf("\n");
 
