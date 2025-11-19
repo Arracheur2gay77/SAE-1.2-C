@@ -50,9 +50,8 @@ int main(){
     printf("\n");
     while(1){
         e++;
-        i=0
-        do
-        {
+        i=0;
+        do{
             printf("\n");
             i++;
         } while (i<5);
