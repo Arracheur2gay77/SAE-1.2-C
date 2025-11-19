@@ -50,7 +50,7 @@ int main(){
     }
     printf("\n\n\n");
 
-    int c,e=0,joueur=0,comp,nb1,nb2;
+    int c,e=0,joueur=0,comp;
     char tab4[21],tab5[21];
     
     for(i=0,c=1;i<=20;i++,c++){
@@ -86,27 +86,6 @@ int main(){
             }
             printf("%c   ",tab5[i]);
         }
-
-        printf("\n");
-
-        while(1){
-            printf("Veuillez entrer un chiffre de la première table : ");
-            scanf("%d",&nb1);
-            if(0<n && nb1<21) break;
-            else printf("Veuillez écrire un nombre entre 1 et 20\n");
-        }
-
-        while(1){
-            if(tab2[nb1-1]==0){
-                printf("Joker ! Vous passez votre tour !");
-                break;
-            }
-            printf("Veuillez entrer un chiffre de la deuxième table : ");
-            scanf("%d",&nb2);
-            if(0<n && nb2<21) break;
-            else printf("Veuillez écrire un nombre entre 1 et 20\n");
-        }
-
         break;
     }
 
