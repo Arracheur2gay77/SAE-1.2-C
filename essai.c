@@ -2,10 +2,10 @@
 
 int main(){
     int i,c;
-    char tab4[21][2];
+    char tab4[21];
 
     for(i=0,c=1;i<=20;i++,c++){
-        tab4[i][0]='#';
+        tab4[i]='#';
         if(c>7){
             printf("\n");
             c=1;
