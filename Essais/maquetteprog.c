@@ -81,7 +81,7 @@ int main(){
          printf("%d--->%d\n",nb2,tab3[nb2-1]);
 
         if(tab2[nb1-1]==tab3[nb2-1]){
-            printf("Vous avez trouvé la combinaision %d et %d qui était")
+            printf("Vous avez trouvé la combinaision %d et %d qui était");
         }
         else{
             printf("Essayez encore");
