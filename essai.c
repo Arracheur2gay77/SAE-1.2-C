@@ -6,7 +6,7 @@ int main(){
 
     for(i=0,c=1;i<=21;i++,c++){
         tab4[i]='#';
-        if(c>6){
+        if(c>7){
             printf("\n");
             c=1;
         }
