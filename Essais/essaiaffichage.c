@@ -50,7 +50,7 @@ int main(){
     }
     printf("\n\n\n");
 
-    int i,c;
+    int c;
     char tab4[21];
     
     for(i=0,c=1;i<=20;i++,c++){
