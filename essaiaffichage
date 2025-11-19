@@ -55,7 +55,7 @@ int main(){
     for(i=0;i<=21;i++){
         tab4[i]='#';
 
-        printf("%s",tab4[i]);
+        printf("%c",tab4[i]);
     }
 
     /*while(1){
