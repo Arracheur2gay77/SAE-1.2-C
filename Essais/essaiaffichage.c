@@ -101,7 +101,7 @@ int main(){
                 break;
             }
             printf("Veuillez entrer un chiffre de la deuxième table : ");
-            scanf("%d",&nb);
+            scanf("%d",&nb2);
             if(0<n && nb2<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
