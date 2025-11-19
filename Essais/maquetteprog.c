@@ -5,7 +5,7 @@
 
 void affichetab(char tab[]){
     int i,c=1,comp=1;
-    printf("    1   2   3   4   5   6   7");
+    printf("    1   2   3   4   5   6   7\n");
     for(i=0;i<21;i++,c++){
         if(c>7){
             printf("\n%d   ",comp);
