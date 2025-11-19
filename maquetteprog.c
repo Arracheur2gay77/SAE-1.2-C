@@ -47,7 +47,6 @@ int main(){
         tab3[i]=n;
         printf("%d ",n);
     }
-
     printf("\n");
     while(1){
         printf("Veuillez entrer un chiffre de la première table :");
