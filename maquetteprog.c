@@ -4,7 +4,7 @@
 
 int main(){
     srand((unsigned int)time(NULL));
-    int tab1[20],tab2[20],tab3[20],i=0,j,n,exist,e=0,joueur;
+    int tab1[20],tab2[20],tab3[20],i=0,j,n,exist;
 
     while(1){
         tab1[i]=i;
@@ -48,6 +48,9 @@ int main(){
         printf("%d ",n);
     }
     printf("\n");
+
+    int nb1,nb2,joueur
+
     while(1){
         e++;
         i=0;
