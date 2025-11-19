@@ -3,7 +3,7 @@
 #include<time.h>
 #include<string.h>
 
-void affichetab(char tab[]);  // Déclaration correcte
+void affichetab(char tab[]);
 
 int main(){
     srand((unsigned int)time(NULL));
@@ -98,11 +98,6 @@ int main(){
     printf("\n");
     return 0;
 }
-
-
-// =====================================================
-//            FONCTION D'AFFICHAGE DU TABLEAU
-// =====================================================
 
 void affichetab(char tab[]){
     int i, comp = 1, c;
