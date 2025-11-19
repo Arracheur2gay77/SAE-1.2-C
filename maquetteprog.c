@@ -49,10 +49,13 @@ int main(){
     }
     printf("\n");
     while(1){
-        do{
+        while(1){
             printf("Veuillez entrer un chiffre de la première table :");
             scanf("%d",&n);
-        }while(0<n && n<20)
+            if(0<n && n<20) break;
+            else printf("Veuillez écrire un nombre entre 1 et 20");
+        }
+
         printf("%d--->%d",n,tab2[n-1]);
 
 
