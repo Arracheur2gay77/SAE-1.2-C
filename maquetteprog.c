@@ -68,7 +68,7 @@ int main(){
         while(1){
             printf("Veuillez entrer un chiffre de la première table : ");
             scanf("%d",&nb1);
-            if(0<n && n<20) break;
+            if(0<n && n<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
         printf("%d--->%d\n",n,tab2[n-1]);
@@ -76,7 +76,7 @@ int main(){
         while(1){
             printf("Veuillez entrer un chiffre de la deuxième table : ");
             scanf("%d",&nb2);
-            if(0<n && n<20) break;
+            if(0<n && n<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
          printf("%d--->%d\n",n,tab3[n-1]);
