@@ -68,7 +68,7 @@ int main(){
         printf("Joueur n°%d\n\n\n",(joueur%2+1));
 
         printf("Première table :\n");
-        printf("   1  2  3  4  5  6  7\n    ");
+        printf("   1  2  3  4  5  6  7\n   ");
         for(i=0,c=1;i<=20;i++,c++){
             printf("%c  ",tab4[i]);
             if(c>7){
