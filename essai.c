@@ -8,6 +8,6 @@ int main(){
         tab4[i]='#';
 
         printf("%c ",tab4[i]);
-        if(6<=i)printf("\n");
+        if(i<=6)printf("\n");
     }
 }
