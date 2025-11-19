@@ -52,10 +52,14 @@ int main(){
     char tab4;
 
     for(i=0;i<=21;i++){
-        tab4[i]=##
+        tab4[i]=##;
     }
 
     while(1){
+
+        for(i=0;i<=21;i++){
+            tab4[i]='##';
+        }   
         printf("   1  2  3  4  5  6  7\n");
         printf("1 ## ## ## ## ## ## ##\n");
         printf("2 ## ## ## ## ## ## ##\n");
