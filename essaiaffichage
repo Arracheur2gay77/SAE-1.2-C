@@ -50,10 +50,11 @@ int main(){
     }
     printf("\n\n\n");
 
-    char tab4[21][3];
+    char tab4[21];
 
     for(i=0;i<=21;i++){
-        tab4[i]='##';
+        tab4[i]='#';
+
         printf("%s",tab4[i]);
     }
 
