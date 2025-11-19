@@ -49,10 +49,10 @@ int main(){
     }
     printf("\n\n\n");
 
-    char tab4;
+    char tab4[21];
 
-    for(i=0;i<=21;i++){
-        tab4[i]=##;
+    for(j=0;j<=21;j++){
+        tab4[j]='##';
     }
 
     while(1){
