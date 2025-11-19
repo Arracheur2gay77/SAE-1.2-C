@@ -51,15 +51,11 @@ int main(){
     printf("\n\n\n");
 
     int c,e=0,joueur=0,comp=1;
-    char tab4[21];
+    char tab4[21],tab5[21];
     
     for(i=0,c=1;i<=20;i++,c++){
         tab4[i]='#';
-        if(c>7){
-            printf("\n");
-            c=1;
-        }
-        printf("%c ",tab4[i]);
+        tab5[i]='#';
     }
     while(1){
         e++;
@@ -77,6 +73,18 @@ int main(){
             }
             printf("%c   ",tab4[i]);
         }
+
+        printf("deuxième table :\n");
+        printf("    1   2   3   4   5   6   7");
+        for(i=0,c=8;i<=20;i++,c++){
+            if(c>7){
+            printf("\n%d   ",comp);
+            c=1;
+            comp++;
+            }
+            printf("%c   ",tab4[i]);
+        }
+
         break;
     }
 
