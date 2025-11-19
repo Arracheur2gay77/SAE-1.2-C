@@ -68,14 +68,14 @@ int main(){
         printf("Joueur n°%d\n\n\n",(joueur%2+1));
 
         printf("Première table :\n");
-        printf("   1  2  3  4  5  6  7");
+        printf("    1   2   3   4   5   6   7");
         for(i=0,c=8;i<=20;i++,c++){
             if(c>7){
-            printf("\n%d  ",comp);
+            printf("\n%d   ",comp);
             c=1;
             comp++;
             }
-            printf("%c  ",tab4[i]);
+            printf("%c   ",tab4[i]);
         }
         break;
     }
