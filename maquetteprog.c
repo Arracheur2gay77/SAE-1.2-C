@@ -47,7 +47,7 @@ int main(){
         tab3[i]=n;
         printf("%d ",n);
     }
-    printf("\n");
+    printf("\n\n\n");
 
     int nb1,nb2,joueur,e;
 
