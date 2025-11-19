@@ -69,7 +69,7 @@ int main(){
 
         printf("Première table :\n");
         printf("   1  2  3  4  5  6  7");
-        for(i=0,c=7;i<=20;i++,c++){
+        for(i=0,c=8;i<=20;i++,c++){
             if(c>7){
             printf("\n%d  ",comp);
             c=1;
