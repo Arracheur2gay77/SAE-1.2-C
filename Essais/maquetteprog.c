@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include <string.h>
 
 int main(){
     srand((unsigned int)time(NULL));
@@ -49,14 +50,42 @@ int main(){
     }
     printf("\n\n\n");
 
-    int nb1,nb2,joueur,e;
-
+    int c,e=0,joueur=0,comp,nb1,nb2;
+    char tab4[21],tab5[21];
+    
+    for(i=0,c=1;i<=20;i++,c++){
+        tab4[i]='#';
+        tab5[i]='#';
+    }
     while(1){
         e++;
-
-        printf("=============\n");
+        printf("==========\n");
         printf("Essai n°%d\n",e);
-        printf("Joueur %d :\n",(joueur%2+1));        
+        printf("Joueur n°%d\n\n\n",(joueur%2+1));
+
+        comp=1;
+        printf("Première table :\n");
+        printf("    1   2   3   4   5   6   7");
+        for(i=0,c=8;i<=20;i++,c++){
+            if(c>7){
+            printf("\n%d   ",comp);
+            c=1;
+            comp++;
+            }
+            printf("%c   ",tab4[i]);
+        }
+
+        comp=1;
+        printf("\n\nDeuxième table :\n");
+        printf("    1   2   3   4   5   6   7");
+        for(i=0,c=8;i<=20;i++,c++){
+            if(c>7){
+            printf("\n%d   ",comp);
+            c=1;
+            comp++;
+            }
+            printf("%c   ",tab5[i]);
+        }
 
         printf("\n");
 
@@ -66,7 +95,6 @@ int main(){
             if(0<n && nb1<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
-        printf("%d--->%d\n",nb1,tab2[nb1-1]);
 
         while(1){
             if(tab2[nb1-1]==0){
@@ -78,17 +106,9 @@ int main(){
             if(0<n && nb2<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
-         printf("%d--->%d\n",nb2,tab3[nb2-1]);
 
-        if(tab2[nb1-1]==tab3[nb2-1]){
-            printf("Vous avez trouvé la combinaision %d et %d qui était");
-        }
-        else{
-            printf("Essayez encore");
-        }
-
-
-         j++;
+        break;
     }
+
     printf("\n");
 }
