@@ -69,12 +69,21 @@ int main(){
         printf("%d--->%d\n",nb1,tab2[nb1-1]);
 
         while(1){
+            if(tab2[nb1-1]==0) break;
             printf("Veuillez entrer un chiffre de la deuxième table : ");
             scanf("%d",&nb2);
             if(0<n && nb2<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
          printf("%d--->%d\n",nb2,tab3[nb2-1]);
+
+        if(tab2[nb1-1]==tab3[nb2-1]){
+
+        }
+        else{
+            printf("Pas ");
+        }
+
 
          j++;
     }
