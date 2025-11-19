@@ -51,9 +51,13 @@ int main(){
     while(1){
         e++;
         i=0
-        while (i<5){
+        do
+        {
             printf("\n");
             i++;
+        } while (i<5);
+        
+            
         }
         printf("=============");
         printf("Essai n°%d",e);
