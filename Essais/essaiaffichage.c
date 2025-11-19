@@ -74,7 +74,7 @@ int main(){
             printf("%c   ",tab4[i]);
         }
 
-        printf("deuxième table :\n");
+        printf("\nDeuxième table :\n");
         printf("    1   2   3   4   5   6   7");
         for(i=0,c=8;i<=20;i++,c++){
             if(c>7){
