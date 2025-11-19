@@ -60,7 +60,7 @@ int main(){
         printf("Essai n°%d\n",e);
         printf("Joueur 1 :\n");        
 
-        printf("\n\n");
+        printf("\n");
 
         while(1){
             printf("Veuillez entrer un chiffre de la première table :");
