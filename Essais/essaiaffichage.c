@@ -74,8 +74,8 @@ int main(){
             printf("\n%d  ",comp);
             c=1;
             comp++;
+            }
             printf("%c  ",tab4[i]);
-        }
         }
         break;
     }
