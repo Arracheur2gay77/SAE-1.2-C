@@ -69,7 +69,10 @@ int main(){
         printf("%d--->%d\n",nb1,tab2[nb1-1]);
 
         while(1){
-            if(tab2[nb1-1]==0) break;
+            if(tab2[nb1-1]==0){
+                printf("Joker ! Vous passez votre tour !");
+                break;
+            }
             printf("Veuillez entrer un chiffre de la deuxième table : ");
             scanf("%d",&nb2);
             if(0<n && nb2<21) break;
