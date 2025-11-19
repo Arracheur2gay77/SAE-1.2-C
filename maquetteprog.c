@@ -50,6 +50,10 @@ int main(){
     printf("\n");
     while(1){
         printf("Veuillez entrer un chiffre de la première table :");
+        scanf("%d",&n);
+        printf("%d--->",n,tab2[n]);
+
+
         break;
     }
 }
