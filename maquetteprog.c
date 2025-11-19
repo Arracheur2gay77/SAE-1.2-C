@@ -76,6 +76,8 @@ int main(){
             if(0<n && n<20) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
+         printf("%d--->%d\n",n,tab3[n-1]);
+
 
         break;
     }
