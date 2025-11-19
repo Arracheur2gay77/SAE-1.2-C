@@ -81,10 +81,10 @@ int main(){
          printf("%d--->%d\n",nb2,tab3[nb2-1]);
 
         if(tab2[nb1-1]==tab3[nb2-1]){
-
+            printf("Vous avez trouvé")
         }
         else{
-            printf("Pas ");
+            printf("Essayez encore");
         }
 
 
