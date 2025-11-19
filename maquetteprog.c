@@ -52,8 +52,14 @@ int main(){
         e++;
         printf("=============");
         printf("Essai n°%d",e);
-        printf("Joueur 1 :")
+        printf("Joueur 1 :");
 
+        i=0
+        while (i<5)
+            printf("\n");
+            i++;
+        }
+        
 
         while(1){
             printf("Veuillez entrer un chiffre de la première table :");
