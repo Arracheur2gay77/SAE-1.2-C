@@ -3,19 +3,24 @@
 #include<time.h>
 
 int main (){
-    int tab1[20],i=0;
+    int tab[20],i=0,j,exist,n;
 
-    while(1){
-        tab1[i]=i;
-        printf("%d ",tab1[i]);
-        i+=1;
+    for(i=0;i<21;i++){
+        do{
+            n=rand()%21+0;
+            exist=0;
 
-        if(i>20) break;
+            for(j=0;j<i;j++){
+                if(tab[j]==n){exist=1;break;}
+            }
+
+        }while(exist==1);
+
+        tab[i]=n;
+        printf("%d ",n);
     }
 
-    int n;
-
     while(1){
-        printf("Veuillez entrer")
+        printf("Veuillez entrer");
     }
 }
