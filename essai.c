@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    int i;
     char tab4[21];
 
     for(i=0;i<=21;i++){
