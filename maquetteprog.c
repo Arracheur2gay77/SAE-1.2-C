@@ -49,7 +49,7 @@ int main(){
     }
     printf("\n");
 
-    int nb1,nb2,joueur
+    int nb1,nb2,joueur,e
 
     while(1){
         e++;
