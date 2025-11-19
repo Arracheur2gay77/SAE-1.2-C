@@ -107,6 +107,33 @@ int main(){
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
 
+        tab4[nb1-1]=tab2[nb1-1];
+        tab5[nb1-1]=tab3[nb1-1];
+
+        comp=1;
+        printf("Première table :\n");
+        printf("    1   2   3   4   5   6   7");
+        for(i=0,c=8;i<=20;i++,c++){
+            if(c>7){
+            printf("\n%d   ",comp);
+            c=1;
+            comp++;
+            }
+            printf("%c   ",tab4[i]);
+        }
+
+        comp=1;
+        printf("\n\nDeuxième table :\n");
+        printf("    1   2   3   4   5   6   7");
+        for(i=0,c=8;i<=20;i++,c++){
+            if(c>7){
+            printf("\n%d   ",comp);
+            c=1;
+            comp++;
+            }
+            printf("%c   ",tab5[i]);
+        }
+
         break;
     }
 
