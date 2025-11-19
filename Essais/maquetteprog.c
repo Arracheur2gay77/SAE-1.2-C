@@ -4,15 +4,17 @@
 #include <string.h>
 
 void affichetab(char tab[]){
-    int i,c=1,comp=1;
-    printf("    1   2   3   4   5   6   7\n");
-    for(i=0;i<21;i++,c++){
+    int i, comp = 1, c;
+
+    printf("    1   2   3   4   5   6   7");
+
+    for(i=0, c=8; i<21; i++, c++){
         if(c>7){
-            printf("\n%d   ",comp);
+            printf("\n%d   ", comp);
             c=1;
             comp++;
         }
-        printf("%c   ",tab[i]);
+        printf("%c   ", tab[i]);
     }
     printf("\n");
 }
