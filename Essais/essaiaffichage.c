@@ -50,7 +50,7 @@ int main(){
     }
     printf("\n\n\n");
 
-    int c,e=0,joueur=0,comp;
+    int c,e=0,joueur=0,comp,nb1,nb2;
     char tab4[21],tab5[21];
     
     for(i=0,c=1;i<=20;i++,c++){
