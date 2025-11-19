@@ -50,7 +50,7 @@ int main(){
     }
     printf("\n\n\n");
 
-    int c,e=0,joueur=0,comp=1;
+    int c,e=0,joueur=0,comp;
     char tab4[21],tab5[21];
     
     for(i=0,c=1;i<=20;i++,c++){
@@ -63,6 +63,7 @@ int main(){
         printf("Essai n°%d\n",e);
         printf("Joueur n°%d\n\n\n",(joueur%2+1));
 
+        comp=1;
         printf("Première table :\n");
         printf("    1   2   3   4   5   6   7");
         for(i=0,c=8;i<=20;i++,c++){
