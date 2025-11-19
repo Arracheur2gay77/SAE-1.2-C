@@ -59,7 +59,10 @@ int main(){
         printf("Joueur %d :\n\n\n",(joueur%2+1));
 
         for(i=1;i<3;i++){
-            printf("   1  2  3  4  5  6  7")
+            printf("   1  2  3  4  5  6  7\n");
+            printf("1 ## ## ## ## ## ## ##\n");
+            printf("2 ## ## ## ## ## ## ##\n");
+            printf("3 ## ## ## ## ## ## ##\n");
         }
     }
     printf("\n");
