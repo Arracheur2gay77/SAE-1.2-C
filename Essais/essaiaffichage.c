@@ -82,7 +82,7 @@ int main(){
             c=1;
             comp++;
             }
-            printf("%c   ",tab4[i]);
+            printf("%c   ",tab5[i]);
         }
 
         break;
