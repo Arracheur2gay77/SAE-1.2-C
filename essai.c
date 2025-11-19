@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    char tab4[21];
+
+    for(i=0;i<=21;i++){
+        tab4[i]='#';
+
+        printf("%c",tab4[i]);
+    }
+}
