@@ -51,19 +51,17 @@ int main(){
 
     char tab4[21];
 
-    for(j=0;j<=21;j++){
-        tab4[j]='##';
+    for(i=0;i<=21;i++){
+        tab4[i]='##';
+        printf("%s",tab4[i]);
     }
 
-    while(1){
-
-        for(i=0;i<=21;i++){
-            tab4[i]='##';
-        }   
+    /*while(1){
+        
         printf("   1  2  3  4  5  6  7\n");
         printf("1 ## ## ## ## ## ## ##\n");
         printf("2 ## ## ## ## ## ## ##\n");
         printf("3 ## ## ## ## ## ## ##\n");
     }
-    printf("\n");
+    printf("\n");*/
 }
