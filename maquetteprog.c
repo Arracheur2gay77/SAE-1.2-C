@@ -53,7 +53,7 @@ int main(){
             printf("Veuillez entrer un chiffre de la première table :");
             scanf("%d",&n);
             if(0<n && n<20) break;
-            else printf("Veuillez écrire un nombre entre 1 et 20");
+            else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
 
         printf("%d--->%d",n,tab2[n-1]);
