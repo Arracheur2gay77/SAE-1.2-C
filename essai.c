@@ -5,11 +5,11 @@ int main(){
     char tab4[21];
 
     for(i=0,c=1;i<=20;i++,c++){
-        tab4[i]='#';
+        tab4[i]='##';
         if(c>7){
             printf("\n");
             c=1;
         }
-        printf("%c",tab4[i]);
+        printf("%c ",tab4[i]);
     }
 }
