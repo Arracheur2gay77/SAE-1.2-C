@@ -3,7 +3,7 @@
 #include<time.h>
 
 int main (){
-    int tab[20],i=0,j,exist,n;
+    int tab[20],i,j,exist,n;
 
     for(i=0;i<21;i++){
         do{
