@@ -56,4 +56,5 @@ int main(){
 
         break;
     }
+    printf("\n");
 }
