@@ -1,9 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 
-int main (){
-    int tab[20],i,j,exist,n;
+int main(){
+    srand((unsigned int)time(NULL));
+    int tab1[20],tab2[20],tab3[20],i=0,j,n,exist;
+
+    while(1){
+        tab1[i]=i;
+        printf("%d ",tab1[i]);
+        i+=1;
+
+        if(i>20) break;
+    }
+
+    printf("\n");
 
     for(i=0;i<21;i++){
         do{
@@ -11,14 +22,32 @@ int main (){
             exist=0;
 
             for(j=0;j<i;j++){
-                if(tab[j]==n){exist=1;break;}
+                if(tab2[j]==n){exist=1;break;}
             }
 
         }while(exist==1);
 
-        tab[i]=n;
+        tab2[i]=n;
         printf("%d ",n);
     }
+
+    printf("\n");
+
+    for(i=0;i<21;i++){
+        do{
+            n=rand()%21+0;
+            exist=0;
+
+            for(j=0;j<i;j++){
+                if(tab3[j]==n){exist=1;break;}
+            }
+
+        }while(exist==1);
+
+        tab3[i]=n;
+        printf("%d ",n);
+    }
+
     printf("\n");
     while(1){
         printf("Veuillez entrer un chiffre de la première table :");
