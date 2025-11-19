@@ -50,7 +50,7 @@ int main(){
     }
     printf("\n\n\n");
 
-    int c,e=0,joueur=0,comp,nb;
+    int c,e=0,joueur=0,comp,nb1,nb2;
     char tab4[21],tab5[21];
     
     for(i=0,c=1;i<=20;i++,c++){
@@ -101,7 +101,7 @@ int main(){
                 break;
             }
             printf("Veuillez entrer un chiffre de la deuxième table : ");
-            scanf("%d",&nb2);
+            scanf("%d",&nb);
             if(0<n && nb2<21) break;
             else printf("Veuillez écrire un nombre entre 1 et 20\n");
         }
