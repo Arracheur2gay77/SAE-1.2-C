@@ -50,7 +50,7 @@ int main(){
     }
     printf("\n\n\n");
 
-    int c;
+    int c,e=0,joueur=0;
     char tab4[21];
     
     for(i=0,c=1;i<=20;i++,c++){
@@ -61,4 +61,13 @@ int main(){
         }
         printf("%c ",tab4[i]);
     }
+    while(1){
+        e++;
+        printf("==========");
+        printf("Essai n°%d",e);
+        printf("Joueur n°%d",(joueur%2+1));
+        break;
+    }
+
+    printf("\n");
 }
