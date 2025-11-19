@@ -81,8 +81,7 @@ int main(){
         }
          printf("%d--->%d\n",n,tab3[n-1]);
 
-
-        break;
+         j++;
     }
     printf("\n");
 }
