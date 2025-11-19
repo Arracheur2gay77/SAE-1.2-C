@@ -22,5 +22,6 @@ int main (){
 
     while(1){
         printf("Veuillez entrer");
+        break;
     }
 }
