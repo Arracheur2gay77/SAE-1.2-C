@@ -107,8 +107,9 @@ int main(){
         printf("\nDeuxième table :\n");
         affichetab(tab5);
         printf("\n");
-    }
 
+        sleep(5);
+    }
     return 0;
 }
 
