@@ -72,6 +72,7 @@ int main(){
 
         //(Fonction pour réattribuer les chiffres à leur emplacement si trouvé)
 
+        if(joueur==1){
         printf("Première table :\n");
         affichetab(tab4);
 
@@ -124,7 +125,7 @@ int main(){
         }
         sleep(2);
     }
-
+    }
     return 0;
 }
 
