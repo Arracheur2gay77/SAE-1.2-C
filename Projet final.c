@@ -50,11 +50,6 @@ int main(){
     int e=0,joueur=0,nb1,nb2;
     char tab4[21],tab5[21];
 
-    for(i=0;i<21;i++){
-            tab4[i]='#';
-            tab5[i]='#';
-        }
-
     while(1){
         e++;
         joueur=e%2;
@@ -63,6 +58,10 @@ int main(){
         printf("Essai n°%d\n",e);
         printf("Joueur n°%d\n\n\n",joueur+1);
 
+        for(i=0;i<21;i++){
+            tab4[i]='#';
+            tab5[i]='#';
+        }
 
         //(Fonction pour réatribuer les chiffres a leur emplacement si trouvé)
 
@@ -91,8 +90,6 @@ int main(){
             if(nb2>=1 && nb2<=21) break;
             printf("Erreur : entrez un nombre entre 1 et 21 !\n");
         }
-
-        printf("%d %d\n",nb1,nb2);
 
         tab4[nb1-1]=tab2[nb1-1];
         tab5[nb2-1]=tab3[nb2-1];
