@@ -63,7 +63,7 @@ int main(){
             tab5[i]='#';
         }
 
-        //Fonction pour réatribuer les chiffres a leur emplacement si trouvé
+        //(Fonction pour réatribuer les chiffres a leur emplacement si trouvé)
 
         printf("Première table :\n");
         affichetab(tab4);
@@ -108,15 +108,15 @@ int main(){
 }
 
 void affichetab(char tab[]){
-    int i, comp = 1, c;
+    int i, ligne = 1, c;
 
     printf("    1   2   3   4   5   6   7");
 
     for(i=0, c=8; i<21; i++, c++){
         if(c>7){
-            printf("\n%d   ", comp);
+            printf("\n%d   ", ligne);
             c=1;
-            comp++;
+            ligne++;
         }
         printf("%c   ", tab[i]);
     }
