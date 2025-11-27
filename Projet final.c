@@ -65,6 +65,8 @@ int main(){
         joueur=e%2;
 
         printf("==========\n");
+        printf("Points joueur 1 : %d\n", trouvej1);
+        printf("Points joueur 2 : %d\n", trouvej2);
         printf("Essai n°%d\n",e);
         printf("Joueur n°%d\n\n\n",joueur+1);
 
@@ -121,7 +123,7 @@ int main(){
         }
         sleep(2);
     }
-    
+
     return 0;
 }
 
