@@ -138,10 +138,13 @@ int bot(int tab1, int tab2,int n1,int n2){
     int i;
 
     for(i=0;i<21;i++){
-        if(tab3==tab4)
+        if(tab3[i-1]==tab4[i-1]){
+            n1=i;
+            n2=i;
+        }
     }
 
-    return n1,n2
+    return n1,n2;
 }
 
 void affichetab(int tab[]){
