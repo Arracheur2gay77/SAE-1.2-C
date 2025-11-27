@@ -109,18 +109,19 @@ int main(){
         affichetab(tab5);
         printf("\n");
 
-        sleep(5);
+        sleep(1);
 
         if(tab4[nb1-1]==tab5[nb2-1]){
-            printf("Bravo, vous avez trouver une combinaison !");
+            printf("Bravo, vous avez trouver une combinaison !\n");
 
         }
         else{
             tab4[nb1-1]=0;
             tab5[nb2-1]=0;
         }
-
+        sleep(2);
     }
+    
     return 0;
 }
 
