@@ -92,6 +92,8 @@ int main(){
             printf("Erreur : entrez un nombre entre 1 et 21 !\n");
         }
 
+        printf("%d %d\n",nb1,nb2);
+
         tab4[nb1-1]=tab2[nb1-1];
         tab5[nb2-1]=tab3[nb2-1];
 
