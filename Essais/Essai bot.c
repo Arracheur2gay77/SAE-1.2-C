@@ -133,16 +133,31 @@ int main(){
     return 0;
 }
 
+int memoirebot(int tab1, int tab2, int n1,int n2){
+
+
+    return 0;
+}
+
 int bot(int tab1, int tab2,int n1,int n2){
     int tab3[21],tab4[21];
-    int i;
+    int i,c=0;
+    srand(time(NULL));
 
     for(i=0;i<21;i++){
         if(tab3[i-1]==tab4[i-1]){
             n1=i;
             n2=i;
+            c=1;
         }
     }
+
+    if(c==0){
+        n1=rand()%22;
+        n2=rand()%22;
+    }
+
+
 
     return n1,n2;
 }
