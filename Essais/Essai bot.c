@@ -116,6 +116,8 @@ int main(){
         affichetab(tab5);
         printf("\n");
 
+        memoirebot(tab4,tab5,nb1,nb2);
+
         sleep(1);
 
         if(tab4[nb1-1]==tab5[nb2-1]){
@@ -134,6 +136,7 @@ int main(){
 }
 
 int memoirebot(int tab1, int tab2, int n1,int n2){
+    int tab3[21], tab4[21];
 
 
     return 0;
