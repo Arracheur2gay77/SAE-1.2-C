@@ -51,7 +51,7 @@ int main(){
     printf("\n\n\n");
 
     int e=0,joueur=0,nb1,nb2;
-    int trouvej1=trouvej2=0;
+    int trouvej1=0, trouvej2=0;
     int tab4[21],tab5[21];
 
     // Initialiser tab4 et tab5 à 0 = caché
