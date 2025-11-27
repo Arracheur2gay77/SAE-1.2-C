@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <unistd.h>
 
 void affichetab(char tab[]);
 
@@ -61,6 +62,8 @@ int main(){
             tab4[i]='#';
             tab5[i]='#';
         }
+
+        //Fonction pour réatribuer les chiffres a leur emplacement si trouvé
 
         printf("Première table :\n");
         affichetab(tab4);
