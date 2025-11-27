@@ -138,6 +138,8 @@ int main(){
 int memoirebot(int tab1, int tab2, int n1,int n2){
     int tab3[21], tab4[21];
 
+    tab3[n1-1]=tab1[n1-1];
+    tab4[n2-1]=tab2[n1-1]
 
     return 0;
 }
