@@ -116,7 +116,7 @@ int main(){
         if(tab4[nb1-1]==tab5[nb2-1]){
             printf("Bravo, vous avez trouver une combinaison !\n");
             if(joueur==1) trouvej1++;
-            else trouvej2
+            else trouvej2++;
         }
         else{
             tab4[nb1-1]=0;
