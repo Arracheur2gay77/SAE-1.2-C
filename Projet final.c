@@ -4,7 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 
-void affichetab(char tab[]);
+void affichetab(int tab[]);
 
 int main(){
     srand((unsigned int)time(NULL));
@@ -12,6 +12,7 @@ int main(){
     int tab1[21],tab2[21],tab3[21];
     int i,j,n,exist;
 
+    // Initialisation tab1 de 1 à 21
     for(i=0;i<21;i++){
         tab1[i]=i+1;
         printf("%d ",tab1[i]);
@@ -19,6 +20,7 @@ int main(){
 
     printf("\n\n");
 
+    // Remplissage aléatoire de tab2 sans répétition
     for(i=0;i<21;i++){
         do{
             n=rand()%21+1;
@@ -33,6 +35,7 @@ int main(){
 
     printf("\n\n");
 
+    // Remplissage aléatoire de tab3 sans répétition
     for(i=0;i<21;i++){
         do{
             n=rand()%21+1;
@@ -48,7 +51,7 @@ int main(){
     printf("\n\n\n");
 
     int e=0,joueur=0,nb1,nb2;
-    char tab4[21],tab5[21];
+    int tab4[21],tab5[21];
 
     while(1){
         e++;
@@ -58,12 +61,13 @@ int main(){
         printf("Essai n°%d\n",e);
         printf("Joueur n°%d\n\n\n",joueur+1);
 
+        // Initialiser tab4 et tab5 à 0 = caché
         for(i=0;i<21;i++){
-            tab4[i]='#';
-            tab5[i]='#';
+            tab4[i]=0;
+            tab5[i]=0;
         }
 
-        //(Fonction pour réatribuer les chiffres a leur emplacement si trouvé)
+        //(Fonction pour réattribuer les chiffres à leur emplacement si trouvé)
 
         printf("Première table :\n");
         affichetab(tab4);
@@ -91,8 +95,9 @@ int main(){
             printf("Erreur : entrez un nombre entre 1 et 21 !\n");
         }
 
-        tab4[nb1-1]=tab2[nb1-1];
-        tab5[nb2-1]=tab3[nb2-1];
+        // Met à jour les tableaux avec les valeurs trouvées
+        tab4[nb1-1] = tab2[nb1-1];
+        tab5[nb2-1] = tab3[nb2-1];
 
         printf("\n=== Mise à jour des tableaux ===\n\n");
 
@@ -102,14 +107,12 @@ int main(){
         printf("\nDeuxième table :\n");
         affichetab(tab5);
         printf("\n");
-    
-        sleep(10);
     }
 
     return 0;
 }
 
-void affichetab(char tab[]){
+void affichetab(int tab[]){
     int i, ligne = 1, c;
 
     printf("    1   2   3   4   5   6   7");
@@ -120,7 +123,10 @@ void affichetab(char tab[]){
             c=1;
             ligne++;
         }
-        printf("%c   ", tab[i]);
+        if(tab[i] == 0)
+            printf("##  ");
+        else
+            printf("%2d  ", tab[i]);
     }
     printf("\n");
 }
