@@ -130,26 +130,23 @@ int main(){
     return 0;
 }
 
-// Mémoire du bot : ici tu peux adapter ta stratégie (exemple basique)
 void memoirebot(int tab1[], int tab2[], int n1, int n2){
-    // Cette fonction peut mémoriser les coups du bot, actuellement vide.
-    // Si tu veux mémoriser, il faut une structure globale.
     (void)tab1; (void)tab2; (void)n1; (void)n2; // pour éviter warnings
 }
 
 // Le bot choisit deux indices non découverts aléatoirement
 void bot(int tab4[], int tab5[], int *n1, int *n2){
-    int i, tries = 0;
+    int i, essai = 0;
     do {
         *n1 = rand() % 21 + 1;
-        tries++;
-    } while(tab4[*n1 - 1] != 0 && tries < 100);
+        essai++;
+    } while(tab4[*n1 - 1] != 0 && essai < 100);
 
-    tries = 0;
+    essai = 0;
     do {
         *n2 = rand() % 21 + 1;
-        tries++;
-    } while(tab5[*n2 - 1] != 0 && tries < 100);
+        essai++;
+    } while(tab5[*n2 - 1] != 0 && essai < 100);
 }
 
 void affichetab(int tab[]){
