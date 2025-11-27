@@ -91,8 +91,8 @@ int main(){
             printf("Erreur : entrez un nombre entre 1 et 21 !\n");
         }
 
-        tab4[nb1-1]=(tab2[nb1-1]<=9)?(tab2[nb1-1]+'0'):'*';
-        tab5[nb2-1]=(tab3[nb2-1]<=9)?(tab3[nb2-1]+'0'):'*';
+        tab4[nb1-1]=(tab2[nb1-1]);
+        tab5[nb2-1]=(tab3[nb2-1]);
 
         printf("\n=== Mise à jour des tableaux ===\n\n");
 
