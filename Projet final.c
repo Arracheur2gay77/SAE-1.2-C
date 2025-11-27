@@ -102,6 +102,8 @@ int main(){
         printf("\nDeuxième table :\n");
         affichetab(tab5);
         printf("\n");
+    
+        sleep(10);
     }
 
     return 0;
