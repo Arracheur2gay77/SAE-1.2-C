@@ -120,14 +120,6 @@ int main(){
             tab5[nb2-1]=0;
         }
 
-// Initialiser tab4 et tab5 à 0 = caché
-//         for(i=0;i<21;i++){
-//             tab4[i]=0;
-//             tab5[i]=0;
-//         }
-
-
-
     }
     return 0;
 }
