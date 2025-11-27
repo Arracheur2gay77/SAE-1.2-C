@@ -51,7 +51,14 @@ int main(){
     printf("\n\n\n");
 
     int e=0,joueur=0,nb1,nb2;
+    int trouvej1=trouvej2=0;
     int tab4[21],tab5[21];
+
+    // Initialiser tab4 et tab5 à 0 = caché
+        for(i=0;i<21;i++){
+            tab4[i]=0;
+            tab5[i]=0;
+        }
 
     while(1){
         e++;
@@ -60,12 +67,6 @@ int main(){
         printf("==========\n");
         printf("Essai n°%d\n",e);
         printf("Joueur n°%d\n\n\n",joueur+1);
-
-        // Initialiser tab4 et tab5 à 0 = caché
-        for(i=0;i<21;i++){
-            tab4[i]=0;
-            tab5[i]=0;
-        }
 
         //(Fonction pour réattribuer les chiffres à leur emplacement si trouvé)
 
@@ -109,6 +110,24 @@ int main(){
         printf("\n");
 
         sleep(5);
+
+        if(tab4[nb1-1]==tab5[nb2-1]){
+            printf("Bravo, vous avez trouver une combinaison !");
+
+        }
+        else{
+            tab4[nb1-1]=0;
+            tab5[nb2-1]=0;
+        }
+
+// Initialiser tab4 et tab5 à 0 = caché
+//         for(i=0;i<21;i++){
+//             tab4[i]=0;
+//             tab5[i]=0;
+//         }
+
+
+
     }
     return 0;
 }
