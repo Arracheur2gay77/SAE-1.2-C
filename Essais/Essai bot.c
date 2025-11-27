@@ -72,7 +72,6 @@ int main(){
 
         //(Fonction pour réattribuer les chiffres à leur emplacement si trouvé)
 
-        if(joueur==1){
         printf("Première table :\n");
         affichetab(tab4);
 
@@ -80,25 +79,30 @@ int main(){
         affichetab(tab5);
         printf("\n");
 
-        while(1){
-            printf("Veuillez entrer un chiffre de la première table (1 à 21) : ");
-            scanf("%d",&nb1);
-            if(nb1>=1 && nb1<=21) break;
-            printf("Erreur : entrez un nombre entre 1 et 21 !\n");
+        if(joueur==1){
+            while(1){
+                printf("Veuillez entrer un chiffre de la première table (1 à 21) : ");
+                scanf("%d",&nb1);
+                if(nb1>=1 && nb1<=21) break;
+                printf("Erreur : entrez un nombre entre 1 et 21 !\n");
+            }
+
+            if(tab2[nb1-1]==0){
+                printf("JOKER ! Vous passez votre tour.\n");
+                continue;
+            }
+
+            while(1){
+                printf("Veuillez entrer un chiffre de la deuxième table (1 à 21) : ");
+                scanf("%d",&nb2);
+                if(nb2>=1 && nb2<=21) break;
+                printf("Erreur : entrez un nombre entre 1 et 21 !\n");
+            }
         }
 
-        if(tab2[nb1-1]==0){
-            printf("JOKER ! Vous passez votre tour.\n");
-            continue;
+        else{
+            bot(tab4,tab5,nb1,nb2);
         }
-
-        while(1){
-            printf("Veuillez entrer un chiffre de la deuxième table (1 à 21) : ");
-            scanf("%d",&nb2);
-            if(nb2>=1 && nb2<=21) break;
-            printf("Erreur : entrez un nombre entre 1 et 21 !\n");
-        }
-
         // Met à jour les tableaux avec les valeurs trouvées
         tab4[nb1-1] = tab2[nb1-1];
         tab5[nb2-1] = tab3[nb2-1];
@@ -124,9 +128,20 @@ int main(){
             tab5[nb2-1]=0;
         }
         sleep(2);
-    }
+        
     }
     return 0;
+}
+
+int bot(int tab1, int tab2,int n1,int n2){
+    int tab3[21],tab4[21];
+    int i;
+
+    for(i=0;i<21;i++){
+        if(tab3==tab4)
+    }
+
+    return n1,n2
 }
 
 void affichetab(int tab[]){
